@@ -1,6 +1,8 @@
 # Image Focus Recognition Neural Network
 An image focus recognition A.I. using Neural Networks
 
+
+
 ## 1. Introduction
 ### 1.1	Motivation
 Photographs are used to capture and record detailed still moments of different scenarios, environments or subjects for a wide variety of purposes. For example, taking a high quality picture of a large celestial body, like the moon in order to see and study its craters for scientific research, to even capturing microscopic images of tiny micro-organisms to study how they interact with their surrounding world, to even just capturing a special moment in a person’s life, like a wedding, or a vacation. Regardless of the application of the images, it is important to capture as much detail as possible, but this detail can be lost when the image is out-of-focus; Not only that, it could also render the image unusable. Machine learning has been used in the past not only for binary classification of in- and out-of-focus images, but also the classification of different kinds of blur. Our goal for this project was to classify images that are in-focus and out-of-focus using Neural Networks. This could have useful applications in a camera focusing system, aiding in either manually focusing the lens, or having it connected to a motorised focusing system and adjusting focus automatically.
@@ -9,6 +11,8 @@ Photographs are used to capture and record detailed still moments of different s
 In past work on in- and out-of-focus image classification, there are certain methods that have been used more frequently than others.  One of the most common practices is the use of support vector machines (SVMs) on gradient magnitudes. Support vector machines can be used to classify how blurry images are by first converting input images to grayscale and calculating their gradient magnitudes.  The gradient magnitudes are acquired by calculating the derivatives of the image to determine the rate at which the intensity of the image changes, often by using a Laplacian or Sobel operator (Tomasz Szandala, 2020).  Images with sharper edges such as in-focus images will have larger gradients, as there are harsher changes in intensity at their edges whereas out-of-focus images will have smaller gradients due to their softer and more gradual changes in intensity.  Support vector machines then come into play with these gradient magnitudes by mapping them to a higher dimensional space, then determining a hyperplane in this space that most evenly separates in- and out-of-focus data points.  After training, new data points are categorised based on which side of the hyperplane they land on after being mapped to the higher dimensional space (Hsu and Chen, 2008).
 
 Another highly popular method of detecting blurred images is convolutional neural networks (CNNS).  Convolutional neural networks are capable of being more robust compared to other methods; they are able to work with larger scale images in an efficient manner, and are well suited to object localization such as identifying when there is blur in only a certain region of an otherwise sharp image (Senaras et al., 2018).  In addition, compared to certain other methods, CNNs do not require the user to manually determine a value to act as the threshold between the two classes, which can be quite task dependent. Convolutional neural networks have been used for a variety of different image recognition tasks, such as identifying whether microscopy images are high quality in-focus images (Yang et al., 2018).
+
+
 
 
 ## 2. Methods
@@ -27,6 +31,8 @@ It may sometimes be unclear if an image is in focus due to personal preference. 
 
 ### 2.3	Evaluation/validation strategy
 Our qualifications for the network are as follows; The Neural Network should be primarily evaluated based on the accuracy it obtains after it’s been trained and tested. Not only that, but it should also be able to accurately categorise a newly given image. If the Neural Network can do that and keep doing it consistently without error, then we’ll consider it a valid Neural Network that satisfies our goal. Furthermore, we will also be testing several configurations in the Neural Network to find the settings that best optimise the neural network so that it is as accurate as possible while also being computationally efficient. 
+
+
 
 
 ## 3. Results
@@ -52,6 +58,8 @@ While the accuracy for the different classes of images is significantly differen
 
 ### 3.3	Number of Epochs
 We then tested how the number of epochs affected the test set accuracy;  Increasing the number of epochs from 100 to 1000 epochs yielded a noticeable improvement, going from an accuracy of 0.90625 to 0.9874, making our model significantly more accurate. 
+
+
 
 
 ## 4. Discussion
