@@ -1,7 +1,7 @@
-# image_focus_recognition_neural_network
+# Image Focus Recognition Neural Network
 An image focus recognition A.I. using Neural Networks
 
-## 1	Introduction
+## 1. Introduction
 ### 1.1	Motivation
 Photographs are used to capture and record detailed still moments of different scenarios, environments or subjects for a wide variety of purposes. For example, taking a high quality picture of a large celestial body, like the moon in order to see and study its craters for scientific research, to even capturing microscopic images of tiny micro-organisms to study how they interact with their surrounding world, to even just capturing a special moment in a person’s life, like a wedding, or a vacation. Regardless of the application of the images, it is important to capture as much detail as possible, but this detail can be lost when the image is out-of-focus; Not only that, it could also render the image unusable. Machine learning has been used in the past not only for binary classification of in- and out-of-focus images, but also the classification of different kinds of blur. Our goal for this project was to classify images that are in-focus and out-of-focus using Neural Networks. This could have useful applications in a camera focusing system, aiding in either manually focusing the lens, or having it connected to a motorised focusing system and adjusting focus automatically.
 
@@ -11,7 +11,7 @@ In past work on in- and out-of-focus image classification, there are certain met
 Another highly popular method of detecting blurred images is convolutional neural networks (CNNS).  Convolutional neural networks are capable of being more robust compared to other methods; they are able to work with larger scale images in an efficient manner, and are well suited to object localization such as identifying when there is blur in only a certain region of an otherwise sharp image (Senaras et al., 2018).  In addition, compared to certain other methods, CNNs do not require the user to manually determine a value to act as the threshold between the two classes, which can be quite task dependent. Convolutional neural networks have been used for a variety of different image recognition tasks, such as identifying whether microscopy images are high quality in-focus images (Yang et al., 2018).
 
 
-## 2	Methods
+## 2. Methods
 We plan on using a Convolutional Neural Network (CNN).  CNNs are robust and are well suited to image recognition and classification tasks, as they can detect features regardless of where they are in the image.  This will be especially important in detecting blur that is localised in certain areas of an image. The CNN we made consists of three convolutional layers with ReLU activation, each followed by a max-pooling layer. After flattening the features, a fully connected layer with 128 nodes and ReLU activation is used, along with a 50% dropout to reduce overfitting. Finally, the output layer consists of a single node with a sigmoid activation function.
 
 ### 2.1	Dataset
@@ -29,7 +29,7 @@ It may sometimes be unclear if an image is in focus due to personal preference. 
 Our qualifications for the network are as follows; The Neural Network should be primarily evaluated based on the accuracy it obtains after it’s been trained and tested. Not only that, but it should also be able to accurately categorise a newly given image. If the Neural Network can do that and keep doing it consistently without error, then we’ll consider it a valid Neural Network that satisfies our goal. Furthermore, we will also be testing several configurations in the Neural Network to find the settings that best optimise the neural network so that it is as accurate as possible while also being computationally efficient. 
 
 
-## 3	Results
+## 3. Results
 ### 3.1	Convolutional Kernel Size
 We performed hyperparameter tests on the convolutional kernel size, and averaged then over 5 runs of the environment. The number of epochs was set to 100 and batch size was set to 32.
 
@@ -54,7 +54,7 @@ While the accuracy for the different classes of images is significantly differen
 We then tested how the number of epochs affected the test set accuracy;  Increasing the number of epochs from 100 to 1000 epochs yielded a noticeable improvement, going from an accuracy of 0.90625 to 0.9874, making our model significantly more accurate. 
 
 
-## 4	Discussion
+## 4. Discussion
 ### 4.1	Limitations or biases
 While testing the model we found a bit of a complication; In some very specific scenarios, the categorization of in-focus/out-of-focus isn’t clear. These occurred only in complex cases with multiple potential subjects and it was due to the fact that it wasn’t immediately obvious what the intended subject was. The Neural Network however still managed to identify when at least 1 subject was in-focus, and going beyond that is an entirely different task and surpasses the complexity of this model at the present time.
 
@@ -69,7 +69,7 @@ Our main objective was to have a model that could differentiate between images t
 The Neural Network could obtain more complexity by being modified to also recognize whether an image contains blur, or other image features like chromatic aberration, lens distortions, etc…  This wouldn’t have the same practical applications as in and out of focus for a focusing system,  but it could have other potential benefits in aiding in capturing a better image.
 
 
-References
+## References
 Hsu, P., Chen, BY. (2008). Blurred Image Detection and Classification. In: Satoh, S., Nack, F., Etoh, M. (eds) Advances in Multimedia Modeling. MMM 2008. Lecture Notes in Computer Science, vol 4903. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-540-77409-9_26
 
 Senaras, C., Niazi, M. K. K., Lozanski, G., & Gurcan, M. N. (2018). DeepFocus: Detection of out-of-focus regions in whole slide digital images using deep learning. PloS one, 13(10), e0205387. https://doi.org/10.1371/journal.pone.0205387
