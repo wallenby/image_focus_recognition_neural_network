@@ -5,7 +5,7 @@ import cv2
 import numpy as np
 
 
-model = keras.models.load_model('/Users/erikmenard/Desktop/ai_projects/focus_recognition_ai/focus_model.h5')
+model = keras.models.load_model('YOUR_PATH_TO_THE_MODEL_HERE.h5')
 
 img_size = 256
 
