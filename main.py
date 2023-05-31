@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 
 
 # Getting Paths
-focus_folder = '/Users/erikmenard/Desktop/ai_projects/focus_recognition_ai/focus_ai_dataset/focused'
-unfocus_folder = '/Users/erikmenard/Desktop/ai_projects/focus_recognition_ai/focus_ai_dataset/not_focused'
+focus_folder = 'path_to_focused_images_folder'
+unfocus_folder = 'path_to_NOT_focused_images_folder'
 
 
 # Arrays for 
