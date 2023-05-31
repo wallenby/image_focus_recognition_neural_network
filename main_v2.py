@@ -10,10 +10,7 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.models import Sequential, Model
 from tensorflow.keras.layers import Input, Dense
 
-print("HERE!")
 devices = tf.config.list_physical_devices()
-print(devices)
-
 
 # Getting Paths
 focus_folder = 'focused_path'
