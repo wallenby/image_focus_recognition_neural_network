@@ -2,6 +2,8 @@
 An image focus recognition A.I. using Neural Networks
 
 
+THE .h5 FILE THAT CONTAINS THE PRE-TRAINED MODEL IS TOO BIG TO UPLOAD!
+
 
 ## 1. Introduction
 ### 1.1	Motivation
