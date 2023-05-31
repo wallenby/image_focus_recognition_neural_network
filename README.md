@@ -2,7 +2,9 @@
 An image focus recognition A.I. using Neural Networks
 
 
-THE .h5 FILE THAT CONTAINS THE PRE-TRAINED MODEL IS TOO BIG TO UPLOAD!
+THE .h5 FILE THAT CONTAINS THE PRE-TRAINED MODEL IS TOO BIG TO UPLOAD TO GITHUB!
+
+But you can download it via this google drive link: https://drive.google.com/file/d/1F4hOER7-8GwNaRpQjkEx9IFwi4GCWcL5/view?usp=sharing
 
 
 ## 1. Introduction
